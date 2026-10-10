@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help with doing a lab
+    url: https://github.com/YuvalHarary/Embedded_Lab_STM32/blob/main/procedures.pdf
+    about: For problems with your code, your board, or your computer, speak to an instructor. The course procedures tell you how.

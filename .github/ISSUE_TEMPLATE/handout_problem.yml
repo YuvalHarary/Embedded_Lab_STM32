@@ -1,0 +1,84 @@
+name: Problem in a lab handout
+description: Report an error in a lab handout PDF. This form is not for help with doing a lab.
+title: "[Lab N] "
+labels: ["handout"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only for a problem **in the handout itself**: a wrong fact, a step that does not agree with the board or the tools, a broken link, a code listing that does not build, or text that is not clear.
+
+        Do **not** use this form for help with doing a lab (your code, your board, or your computer). For that, speak to an instructor, as [procedures.pdf](https://github.com/YuvalHarary/Embedded_Lab_STM32/blob/main/procedures.pdf) says.
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This is a problem in the handout, not a question about how to do the lab or a problem with my own code or board.
+          required: true
+        - label: I searched the open issues, and this problem is not reported yet.
+          required: true
+
+  - type: dropdown
+    id: lab
+    attributes:
+      label: Handout
+      options:
+        - Lab 0
+        - Lab 1
+        - Lab 2
+        - Lab 3
+        - Lab 4
+        - Lab 5
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Wrong fact (register address, bit, pin, value, or calculation)
+        - A step does not agree with the board or the tools
+        - Code listing does not build, or does not copy correctly from the PDF
+        - Broken link, or a link to the wrong page of a manual
+        - Text is not clear, or can have two meanings
+        - Typing error or layout problem
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: The page number of the PDF and the part, task, step, figure, or table.
+      placeholder: "Page 7, Part \"A\", Task A1, step 3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote
+    attributes:
+      label: Text from the handout
+      description: Copy the sentence, value, or code line that has the problem.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Tell what is wrong, and what you think is correct.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: "Optional: a manual reference (for example, RM0440 section 9.4.1, p. 355), a screenshot of the tool, or the build error."
+    validations:
+      required: false
