@@ -8,12 +8,12 @@ Course materials for the STM32 embedded systems laboratory of the [EnICS Labs In
 
 ## Labs
 
-| Lab | Title | Handout |
+| Lab | Title | Documents |
 |---|---|---|
 | 0 | Toolchain Setup and First Flash | [lab00.pdf](lab00-setup/lab00.pdf) |
-| 1 | The Morse Code Lock: GPIO and the Memory Map | [lab01.pdf](lab01-gpio/lab01.pdf) |
+| 1 | The Morse Code Lock: GPIO and the Memory Map | [Booklet](lab01-gpio/lab01_booklet.pdf), [Tasks](lab01-gpio/lab01_tasks.pdf) |
 
-Each lab has its own folder, with its handout and the files that the lab uses. You can also download all the files from the [Releases](https://github.com/YuvalHarary/Embedded_Lab_STM32/releases/latest) page.
+Each lab has its own folder, with its documents and the files that the lab uses. From Lab 1 on, a lab has two documents: the **booklet** teaches the concepts of the lab, and the **tasks** document gives the pre-laboratory exercises and the tasks. Read each part of the booklet before you do the exercises of that part. You can also download all the files from the [Releases](https://github.com/YuvalHarary/Embedded_Lab_STM32/releases/latest) page.
 
 ## Accompanying Videos for the STM32 Embedded Systems Laboratory
 
